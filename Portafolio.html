@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Portafolio TAE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0a;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    border-bottom:1px solid #1a1a1a;
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:8px;
+}
+
+header p{
+    color:#888;
+    margin-top:15px;
+}
+
+/* MENU */
+
+nav{
+    background:#050505;
+    padding:25px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #1a1a1a;
+}
+
+nav a{
+    color:#777;
+    text-decoration:none;
+    margin:0 20px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#deff9a;
+}
+
+/* SECCIONES */
+
+.seccion{
+    display:none;
+    padding:60px 30px;
+}
+
+.seccion:target{
+    display:block;
+}
+
+.seccion h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    letter-spacing:5px;
+    color:#deff9a;
+}
+
+/* ACTIVIDADES */
+
+.actividad{
+    max-width:1200px;
+    margin:auto;
+    margin-bottom:60px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:15px;
+    padding:35px;
+    transition:.4s;
+}
+
+.actividad:hover{
+    transform:translateY(-5px);
+    border-color:#deff9a;
+}
+
+.actividad h3{
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing:3px;
+}
+
+/* GALERIA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#151515;
+    border:1px solid #222;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img,
+.card video{
+    width:100%;
+    display:block;
+}
+
+.card p{
+    padding:15px;
+    text-align:center;
+    color:#bbb;
+}
+
+/* FOOTER VANGUARDISTA */
+
+footer{
+    margin-top:80px;
+    background:#000;
+    border-top:1px solid #1a1a1a;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.photo-banner{
+    height:200px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.lens-flare{
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+    rgba(222,255,154,.4) 0%,
+    transparent 70%);
+    filter:blur(20px);
+    animation:flareMove 8s infinite alternate;
+}
+
+.banner-text{
+    z-index:2;
+    letter-spacing:10px;
+    font-size:2rem;
+    text-transform:uppercase;
+}
+
+.footer-brand h2{
+    letter-spacing:6px;
+}
+
+.footer-brand span{
+    color:#deff9a;
+    font-style:italic;
+}
+
+.copyright{
+    margin-top:30px;
+    color:#555;
+    font-size:.8rem;
+}
+
+/* ANIMACIONES */
+
+@keyframes flareMove{
+    from{
+        transform:translate(-100px,-20px);
+    }
+    to{
+        transform:translate(100px,20px);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    nav a{
+        display:block;
+        margin:12px 0;
+    }
+
+    .banner-text{
+        font-size:1.2rem;
+        letter-spacing:5px;
+    }
+}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTAFOLIO TAE</h1>
+    <p>Fotografía Digital • Evidencias • Proyectos</p>
+</header>
+<nav>
+    <a href="#tae3">TAE 3</a>
+    <a href="#tae4">TAE 4</a>
+    <a href="#tae5">TAE 5</a>
+    <a href="#tae6">TAE 6</a>
+</nav>
+
+<!-- ================= TAE 3 ================= -->
+<section id="tae3" class="seccion">
+    <h2>El Mundo a Traves de la Cámara</h2>
+
+    <div class="actividad">
+        <h3>Actividades de Tercer Semestre</h3>
+
+        <div class="galeria">
+            <div class="card">
+                <img src="IMG_20240816_081219.JPG" alt="Imagen actividad">
+                <p>Introduccion a la Fotografia.</p>
+            </div>
+
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 163716.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 163756.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 163858.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 163933.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164004.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164033.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164058.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164124.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164149.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164218.PNG" alt="Imagen actividad">
+                <p>Perspectiva Forzada.</p>
+            </div>
+	<div class="card">
+                <img src="IMG_20240830_085040.JPG" alt="Imagen actividad">
+                <p>Punto y Linea en Fotografia.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 164258.PNG" alt="Imagen actividad">
+                <p>Historia de la Fotografia.</p>
+            </div>
+	<div class="card">
+                <img src="IMG_20240927_073515.JPG" alt="Imagen actividad">
+                <p>Exposicion Fotografica.</p>
+            </div>
+	<div class="card">
+                <img src="IMG_20240927_073243.JPG" alt="Imagen actividad">
+                <p>Modos o Escenas de la Cámara Fotográfica.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20241011-WA0010.JPG" alt="Imagen actividad">
+                <p>Fotografias Bulbo.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20241011-WA0009.JPG" alt="Imagen actividad">
+                <p>Fotografias Bulbo.</p>
+            </div>
+	<div class="card">
+                <img src="Logo.PNG" alt="Imagen actividad">
+                <p>Iniciacion Photoshop.</p>
+            </div>
+	<div class="card">
+                <img src="logo udg.PNG" alt="Imagen actividad">
+                <p>Logo.</p>
+            </div>
+	<div class="card">
+                <img src="wonder-day-cactus-90.PNG" alt="Imagen actividad">
+                <p>Vectores.</p>
+            </div>
+	<div class="card">
+                <img src="Firma digital.PNG" alt="Imagen actividad">
+                <p>Firma.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 182152.PNG" alt="Imagen actividad">
+                <p>Imagenes con el Simulador.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 182217.PNG" alt="Imagen actividad">
+                <p>Imagenes con el simulador.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TAE 4 ================= -->
+<section id="tae4" class="seccion">
+    <h2>Caceria de Imagenes 2025</h2>
+
+    <div class="actividad">
+        <h3>Actividades de Cuarto Semestre (Imagenes)</h3>
+
+   
+	<div class="galeria">
+            <div class="card">
+                <img src="IMG-20250322-WA0180.jpg" alt="Imagen actividad">
+                <p>Modo TV.</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="IMG-20250322-WA0181.jpg" alt="Imagen actividad">
+                <p>Modo TV.</p>
+            </div>
+       <div class="galeria">
+            <div class="card">
+                <img src="IMG-20250322-WA0182.jpg" alt="Imagen actividad">
+                <p>Modo TV.</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="IMG-20250322-WA0185.jpg" alt="Imagen actividad">
+                <p>Modo TV.</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="IMG-20250322-WA0183.jpg" alt="Imagen actividad">
+                <p>Modo TV.</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195219.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195257.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195324.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195353.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195423.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195448.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195521.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+	<div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 195556.png" alt="Imagen actividad">
+                <p>Fotografias (Barrido y Zooming).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TAE 5 ================= -->
+<section id="tae5" class="seccion">
+    <h2>Imaginacion Digital</h2>
+
+    <div class="actividad">
+        <h3>Nombre de la actividad 1</h3>
+
+        <div class="galeria">
+            <div class="card">
+                <img src="Collage.png" alt="Imagen actividad">
+                <p>Composicion Digital.</p>
+            </div>
+
+            <div class="card">
+                <img src="woman-8471932_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="boy-317041_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="converse-7336903_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="female-437990_1280-Recuperado.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="elephant-8994442_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="lion-7874143_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="outdoor-7576744_1280.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="man-4333898_12801.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="boy-7097685_12801.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="blackandwhite-7402145_12801.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+            </div>
+	<div class="card">
+                <img src="brothers-7747559_12801.jpg" alt="Imagen actividad">
+                <p>Foto a Color.</p>
+	    </div>
+	<div class="card">
+                <img src="r3-Recuperado2.jpg" alt="Imagen actividad">
+                <p>Restauracion.</p>
+	    </div>
+	<div class="card">
+                <img src="r1-Recuperado.jpg" alt="Imagen actividad">
+                <p>Restauracion.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250830-WA0000.jpg" alt="Imagen actividad">
+                <p>Clonacion.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250830-WA0001.jpg" alt="Imagen actividad">
+                <p>Clonacion.</p>
+            </div>
+	<div class="card">
+                <img src="a23.jpg" alt="Imagen actividad">
+                <p>Cordenadas Polares.</p>
+            </div>
+	<div class="card">
+                <img src="a31.jpg" alt="Imagen actividad">
+                <p>Cordenadas Polares.</p>
+            </div>
+	<div class="card">
+                <img src="a12.jpg" alt="Imagen actividad">
+                <p>Cordenadas Polares.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250906-WA0007.jpg" alt="Imagen actividad">
+                <p>Cordenadas Polares.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250920-WA0003.jpg" alt="Imagen actividad">
+                <p>Filro.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250920-WA0001.jpg" alt="Imagen actividad">
+                <p>Filro.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250920-WA0002.jpg" alt="Imagen actividad">
+                <p>Filro.</p>
+            </div>
+	<div class="card">
+                <img src="family-3602245_12801.jpg" alt="Imagen actividad">
+                <p>Pop Out.</p>
+            </div>
+	<div class="card">
+                <img src="father-656734_12801.jpg" alt="Imagen actividad">
+                <p>Pop Out.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20250920-WA0006.jpg" alt="Imagen actividad">
+                <p>Pop Out.</p>
+            </div>
+	<div class="card">
+                <img src="portada1.jpg" alt="Imagen actividad">
+                <p>Examen.</p>
+            </div>
+	<div class="card">
+                <img src="4027442e0da9b4420f2cc1c559ac759d.jpg" alt="Imagen actividad">
+                <p>Examen.</p>
+            </div>
+	<div class="card">
+                <img src="lata.webp2.jpg" alt="Imagen actividad">
+                <p>Mockup.</p>
+            </div>
+	<div class="card">
+                <img src="lata.webp1.jpg" alt="Imagen actividad">
+                <p>Mockup.</p>
+            </div>
+	<div class="card">
+                <img src="orange-1117645_1280.2.jpg" alt="Imagen actividad">
+                <p>Transparencia.</p>
+            </div>
+	<div class="card">
+                <img src="apple-256263_1280-Recuperado.jpg" alt="Imagen actividad">
+                <p>Transparencia.</p>
+            </div>
+	<div class="card">
+                <img src="Sin título-1.jpg" alt="Imagen actividad">
+                <p>Poster Tiempo, Linea, Espacio y Punto.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20251114-WA0025(1).jpg" alt="Imagen actividad">
+                <p>Sesion Fotografica.</p>
+            </div>
+	<div class="card">
+                <img src="IMG-20251114-WA0056(1).jpg" alt="Imagen actividad">
+                <p>Sesion Fotografica.</p>
+            </div>
+	<div class="card">
+                <img src="pajaro1.GIF" alt="Imagen actividad">
+                <p>GIF.</p>
+            </div>
+	<div class="card">
+                <img src="monito.GIF" alt="Imagen actividad">
+                <p>GIF Personalizado.</p>
+            </div>
+	<div class="card">
+                <img src="modelo2w.JPG" alt="Imagen actividad">
+                <p>Neón.</p>
+            </div>
+	<div class="card">
+                <img src="muro1.JPG" alt="Imagen actividad">
+                <p>Muro.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TAE 6 ================= -->
+<section id="tae6" class="seccion">
+    <h2>Fronteras de la Imagen</h2>
+
+    <div class="actividad">
+        <h3>Nombre de la actividad 1</h3>
+
+        <div class="galeria">
+            <div class="card">
+                <img src="Captura de pantalla 2026-05-29 212011.png" alt="Imagen actividad">
+                <p>Producto Integrador 1.</p>
+            </div>
+	 <div class="card">
+                <img src="Captura de pantalla 2026-05-29 212041.png" alt="Imagen actividad">
+                <p>Tablas.</p>
+            </div>
+	 <div class="card">
+                <img src="Captura de pantalla 2026-05-29 212105.png" alt="Imagen actividad">
+                <p>Video.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212129.png" alt="Imagen actividad">
+                <p>Producto Integrador.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212232.png" alt="Imagen actividad">
+                <p>BackGround HTML.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212252.png" alt="Imagen actividad">
+                <p>Etiqueta FONT.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212320.png" alt="Imagen actividad">
+                <p>Listas.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212348.png" alt="Imagen actividad">
+                <p>Hipervinculos.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212414.png" alt="Imagen actividad">
+                <p>Marquesina.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212437.png" alt="Imagen actividad">
+                <p>Imagenes.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212508.png" alt="Imagen actividad">
+                <p>Galeria Animada.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212535.png" alt="Imagen actividad">
+                <p>Galeria Borde.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212602.png" alt="Imagen actividad">
+                <p>Tarjetas.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212632.png" alt="Imagen actividad">
+                <p>Tarjeta 3D.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212704.png" alt="Imagen actividad">
+                <p>Animacion Paisaje.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212731.png" alt="Imagen actividad">
+                <p>Banner.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212756.png" alt="Imagen actividad">
+                <p>Grafico.</p>
+            </div>
+	<div class="card">
+                <img src="Captura de pantalla 2026-05-29 212829.png" alt="Imagen actividad">
+                <p>Publicacion de Sitio.</p>
+            </div>
+        </div>
+    </div>
+	</section>
+
+<footer>
+    <div class="footer-container">
+
+        <section class="photo-banner">
+            <div class="lens-flare"></div>
+            <h3 class="banner-text">
+                Capturando Creatividad
+            </h3>
+        </section>
+
+        <div class="footer-brand">
+            <h2> <span>Ángel Daniel González Castro</span></h2>
+        </div>
+
+        <p class="copyright">
+            © 2026 Portafolio Académico
+        </p>
+
+    </div>
+</footer>
+</body>
+</html>
